@@ -17,7 +17,7 @@ export default class App extends Component{
     return (
       <ApolloProvider client={client}>
         <Container>
-          <h1>Hello Graphql</h1>
+          <h1>Administrador de Tacos</h1>
           <Routes/>
         </Container>
       </ApolloProvider>
