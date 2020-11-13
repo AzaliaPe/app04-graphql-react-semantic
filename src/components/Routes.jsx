@@ -4,7 +4,8 @@ import ProductList from './ProductList';
 import Product from './Product';
 import HomeView from './HomeView';
 import AddProduct from './AddProduct';
-import ProductGroupList from './ProductGroupList'; 
+import ProductGroupList from './ProductGroupList';
+import AddProductGroup from './AddProductGroup';
 
 export default class Routes extends Component{
 
@@ -16,6 +17,7 @@ export default class Routes extends Component{
                     <Route path='/products' component={ProductList}/>
                     <Route path='/addproduct' component={AddProduct}/>
                     <Route path='/groups' component={ProductGroupList}/>
+                    <Route path='/addproductgroup' component={AddProductGroup}/>
                     <Route path='/' component={HomeView}/>
                 </Switch>
             </BrowserRouter>
