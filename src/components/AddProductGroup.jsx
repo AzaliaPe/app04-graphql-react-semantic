@@ -43,13 +43,15 @@ export default class AddProductGroup extends Component {
         console.log(this.state.groups);
     }
 
+    editProductGroup = id => this.props.history.push({ pathname: '/editproductgroup', state: { productGroupId: id } });
+
     groupList = () => {
         return this.state.groups.map(item => {
             return (
                 <ListItem key={item.id}>
                     <ListContent floated='right'>
-                        <Button>Editar</Button>
-                        <Button color="red">Eliminar</Button>
+                        <Button onClick={() => this.editProductGroup(item.id)}>Editar</Button>
+                        <Button color='red'>Eliminar</Button>
                     </ListContent>
                     <ListContent>{item.name}</ListContent>
                 </ListItem>
